@@ -1,0 +1,10 @@
+scalar BigDecimal
+
+type Query {
+    getPolicySummaryByNumber(number: String): Policy
+}
+
+type Policy {
+    policyNumber: String,
+    premium: BigDecimal
+}
